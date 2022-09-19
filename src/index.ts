@@ -9,3 +9,5 @@ app.listen(port, () => {
 });
 
 app.use('/api', router);
+
+export default app;

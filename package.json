@@ -4,7 +4,7 @@
   "description": "api for creating multiple scaled images for an entered image",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsc && jasmine",
     "lint": "eslint src/*.ts",
     "lint:f": "eslint src/*.ts --fix",
     "build": "tsc",
