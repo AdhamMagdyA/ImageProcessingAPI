@@ -1,0 +1,24 @@
+{
+  "name": "image_processing_api",
+  "version": "1.0.0",
+  "description": "api for creating multiple scaled images for an entered image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdhamMagdyA/ImageProcessingAPI.git"
+  },
+  "keywords": [
+    "image",
+    "processing",
+    "api"
+  ],
+  "author": "Adham Magdy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdhamMagdyA/ImageProcessingAPI/issues"
+  },
+  "homepage": "https://github.com/AdhamMagdyA/ImageProcessingAPI#readme"
+}
