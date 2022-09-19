@@ -4,7 +4,8 @@
   "description": "api for creating multiple scaled images for an entered image",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/AdhamMagdyA/ImageProcessingAPI/issues"
   },
-  "homepage": "https://github.com/AdhamMagdyA/ImageProcessingAPI#readme"
+  "homepage": "https://github.com/AdhamMagdyA/ImageProcessingAPI#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
 }
