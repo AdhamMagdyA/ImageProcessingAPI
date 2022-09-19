@@ -5,7 +5,8 @@ export default {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
     ],
     "overrides": [
     ],
@@ -15,8 +16,9 @@ export default {
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint", "prettier"
     ],
     "rules": {
+        "prettier/prettier": "1",
     }
 }
