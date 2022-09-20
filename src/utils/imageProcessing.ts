@@ -1,6 +1,6 @@
 import sharp from 'sharp';
 
-const resizeImage = (filename: string, width: number, height: number) => {
+const resizeImage = async (filename: string, width: number, height: number) => {
   // the resizing logic is taken from sharp documentation: https://sharp.pixelplumbing.com/api-constructor
   sharp(`./assets/full/${filename}.jpg`)
     .resize(width, height)
