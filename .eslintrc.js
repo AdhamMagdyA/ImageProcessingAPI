@@ -18,6 +18,11 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
-    'prettier/prettier': 1,
+    'prettier/prettier': [
+      1,
+      {
+        endOfLine: 'auto',
+      }
+    ],
   },
 };
