@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "tsc && jasmine",
+    "prettier": "prettier --check src/**/*.ts",
+    "prettier:w": "prettier --write src/**/*.ts",
     "lint": "eslint src/**/*.ts",
     "lint:f": "eslint src/**/*.ts --fix",
     "build": "tsc",
