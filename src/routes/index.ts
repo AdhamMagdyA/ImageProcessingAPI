@@ -3,7 +3,7 @@ import image_router from './api/image';
 
 const router: Router = express.Router();
 
-router.get('/', (_req: Request, res: Response) => {
+router.get('/', (_req: Request, res: Response): void => {
   res.send('Welcome to the Image Processing API');
 });
 
