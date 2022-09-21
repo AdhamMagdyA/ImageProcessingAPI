@@ -1,9 +1,10 @@
 import app from '../../index';
 import supertest from 'supertest';
+import resizeImage from '../../utils/imageProcessing';
 
 const request = supertest(app);
 
-// suite of tests
+// suite of tests for testing the api
 describe('testing the image api', () => {
   // correct image name with dimensions between 1*1 and 1920x1080
   it('should return the image', async () => {
@@ -47,5 +48,14 @@ describe('testing the image api', () => {
       '/api/image/?filename=fjord&width=0&height=0'
     );
     expect(response.status).toBe(400);
+  });
+});
+
+// suite of tests for testing the resizing image function
+describe('testing the resize image function', () => {
+  // correct image name with dimensions in range
+  it('should resize the image', async () => {
+    const response = await resizeImage('fjord', 200, 200);
+    expect(response).toBe(true);
   });
 });
