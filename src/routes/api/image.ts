@@ -1,11 +1,11 @@
-import express from 'express';
+import express, { Request, Response, Router } from 'express';
 import path from 'path';
 import resizeImage from '../../utils/imageProcessing';
 import fs from 'fs';
 
-const image_router = express.Router();
+const image_router: Router = express.Router();
 
-image_router.get('/', async (req, res) => {
+image_router.get('/', async (req: Request, res: Response): Promise<void> => {
   const imageName = req.query.filename;
   const width = req.query.width;
   const height = req.query.height;

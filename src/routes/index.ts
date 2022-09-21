@@ -1,9 +1,9 @@
-import express from 'express';
+import express, { Request, Response, Router } from 'express';
 import image_router from './api/image';
 
-const router = express.Router();
+const router: Router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/', (_req: Request, res: Response) => {
   res.send('Welcome to the Image Processing API');
 });
 
