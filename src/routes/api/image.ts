@@ -65,9 +65,7 @@ image_router.get('/', async (req, res) => {
     await resizeImage(imageName as string, Number(width), Number(height)).then(
       (result) => {
         if (result) {
-          console.log('about to send the image');
           res.status(200).sendFile(thumb);
-          console.log('image sent');
         } else {
           res.status(500).send('Internal server error');
         }
